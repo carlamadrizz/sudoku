@@ -1,11 +1,11 @@
 :root {
     --bg-main: #f0f2f5;
     --bg-body: #fff;
-    --color-txt: #000;
-    --filled-color: #000;
-    --filled-bg: #B2AAB4;
+    --color-txt: --black;
+    --filled-color: #B177C2;
+    --filled-bg: #403d41;
 
-    --white: #fff;
+    --white: #B177C2;
     --purple: #B177C2;
     --red: #e91e63;
     --black: #000;
@@ -25,10 +25,10 @@
 }
 
 .dark {
-    --bg-main: #2a2a38;
-    --bg-body: #1a1a2e;
-    --color-txt: #6a6a6a;
-    --filled-color: #4f4f63;
+    --bg-main: #373636;
+    --bg-body: #222223;
+    --color-txt: --white;
+    --filled-color:white;
     --filled-bg: #000;
 }
 
@@ -127,6 +127,28 @@ nav {
     height: 100%;
     min-width: 400px;
 }
+
+.table {
+    margin:1em auto;
+  }
+  td {
+    height:30px;
+    width:30px;
+    border:1px solid;
+    text-align:center;
+  }
+  td:first-child {
+    border-left:solid;
+  }
+  td:nth-child(3n) {
+    border-right:solid ;
+  }
+  tr:first-child {
+    border-top:solid;
+  }
+  tr:nth-child(3n) td {
+    border-bottom:solid ;
+  }
 
 .start-screen {
     position: absolute;
